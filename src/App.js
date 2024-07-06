@@ -11,6 +11,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import Certificates from "./components/sections/Certificate";
+// import BackgroundMusic from "./components/BackgroundMusic";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -41,6 +42,7 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
+        {/* <BackgroundMusic /> */}
         <Navbar />
         <Body>
           <StartCanvas />

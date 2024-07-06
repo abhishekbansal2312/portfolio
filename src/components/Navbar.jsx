@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 import { Bio } from "../data/constants";
 import { BiMenu } from "react-icons/bi";
-import { AiFillLinkedin } from "react-icons/ai"; // Import LinkedIn icon
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaMusic } from "react-icons/fa"; // Import Music icon
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -66,10 +67,10 @@ const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   display: flex;
-  justify-content: flex-end; /* Adjusted to align buttons to the right */
+  justify-content: flex-end;
   align-items: center;
   padding: 0 6px;
-  gap: 10px; /* Added gap between buttons */
+  gap: 10px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -128,9 +129,51 @@ const MobileMenu = styled.ul`
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
+const MusicButton = styled.button`
+  background: none;
+  border: none;
+  color: ${({ theme }) => theme.text_primary};
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+const GithubButton = styled.a`
+  border: 1px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primary};
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.6s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const theme = useTheme();
+  const audioRef = useRef(null);
+
+  const handlePlayPause = () => {
+    if (audioRef.current.paused) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  };
 
   return (
     <Nav>
@@ -167,16 +210,24 @@ const Navbar = () => {
               Projects
             </NavLink>
 
+            <GithubButton href={Bio.github} target="_Blank">
+              Github
+            </GithubButton>
+
             <SocialButton
-              href={Bio.linkedin} // Make sure to add the LinkedIn URL to your Bio constant
+              href={Bio.linkedin}
               target="_Blank"
               rel="noopener noreferrer"
               style={{
-                background: "#0e76a8", // LinkedIn's official color
+                background: "#0e76a8",
                 color: "white",
               }}>
               <AiFillLinkedin style={{ marginRight: "8px" }} /> LinkedIn Profile
             </SocialButton>
+
+            <MusicButton onClick={handlePlayPause}>
+              <FaMusic />
+            </MusicButton>
           </MobileMenu>
         )}
 
@@ -188,6 +239,15 @@ const Navbar = () => {
           <SocialButton href={Bio.github} target="_Blank">
             Github
           </SocialButton>
+
+          <MusicButton onClick={handlePlayPause}>
+            <FaMusic />
+          </MusicButton>
+          <audio
+            ref={audioRef}
+            src="Stephen Sanchez - Until I Found You (Karaoke Version).mp3"
+            loop
+          />
         </ButtonContainer>
       </NavbarContainer>
     </Nav>
