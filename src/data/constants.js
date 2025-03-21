@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/abhishekbansal2312",
   resume:
-    "https://drive.google.com/file/d/1qgG0yf0bjysc7i2CLIPqhTi9FGRkxFtx/view",
+    "https://drive.google.com/file/d/14wD30jEVIwxLGqRvFdf6ss5b6HD4adiz/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/abhishek-bansal-03ba6b267",
   twitter: "https://twitter.com/Abhishek_ban23",
   insta: "https://www.instagram.com/abhishek_bansal_6/",
@@ -277,35 +277,65 @@ export const education = [
     degree: "CBSE(X), Science with Computer",
   },
 ];
-
 export const projects = [
-  // {
-  //   id: 2,
-  //   title: "Brain Tumor Detection",
-  //   date: "Jan 2023 - Mar 2023",
-  //   description:
-  //     "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-  //   image:
-  //     "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-  //   webapp: "https://brain-tumor.netlify.app/",
-  //   member: [
-  //     {
-  //       name: "Rishav Chanda",
-  //       img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-  //       linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  //       github: "https://github.com/rishavchanda/",
-  //     },
-  //     {
-  //       name: "Upasana Chaudhuri",
-  //       img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //       linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-  //       github: "https://github.com/upasana0710",
-  //     },
-  //   ],
-  // },
+  {
+    id: 1,
+    title: "Summarise",
+    date: "2024",
+    description:
+      "A full-stack SaaS application that processes and condenses PDF documents using AI integration with OpenAI and Gemini models. Features include secure authentication, subscription management, and a responsive UI.",
+    image: "/images/summarise.png",
+    tags: ["MERN", "OpenAI", "Gemini", "SaaS", "PDF Processing"],
+    category: "web app",
+    github: "https://github.com/abhishekbansal2312/summarise",
+    webapp: "https://summarise-nine.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "DineSync - Seamless Dining",
+    date: "2024",
+    description:
+      "A digital ordering system for cafeterias that enables users to browse menus, place orders, and provide reviews for better dining experiences. Features secure authentication, dynamic filtering, and a review system.",
+    image: "/images/dinesync.png",
+    tags: [
+      "Authentication",
+      "Dynamic Filtering",
+      "Review System",
+      "Food Ordering",
+    ],
+    category: "web app",
+    github: "https://github.com/abhishekbansal2312/DineSync-SeamlessDining",
+    webapp: "https://dine-sync-seamless-dining.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "HobbiesClub - Event Management",
+    date: "2023",
+    description:
+      "An event management platform that allows administrators to create events, manage participants, and send automated notifications. Features secure authentication, RESTful APIs, and feedback collection.",
+    image: "/images/hobbiesclub.png",
+    tags: [
+      "Event Management",
+      "RESTful APIs",
+      "Authentication",
+      "Notifications",
+    ],
+    category: "web app",
+    github: "https://github.com/abhishekbansal2312/EventManagement",
+    webapp: "https://mellow-moxie-f15ef2.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "Amazon Clone",
+    date: "2023",
+    description:
+      "A comprehensive clone of the Amazon e-commerce platform with product browsing, user authentication, and cart functionality.",
+    image: "/images/amazon-clone.png",
+    tags: ["E-commerce", "React", "CSS", "Authentication"],
+    category: "web app",
+    github: "https://advance-amazon.netlify.app/",
+    webapp: "https://advance-amazon.netlify.app/",
+  },
   {
     id: 5,
     title: "Guessing Game",
@@ -329,10 +359,8 @@ export const projects = [
     image: "/images/tic-tac.png",
     tags: ["HTML", "Javascript", "GIT", "CSS"],
     category: "web app",
-    github:
-      "https://github.com/abhishekbansal2312/JS-Projects/tree/main/ChaiAurCode",
-    webapp:
-      "https://github.com/abhishekbansal2312/JS-Projects/tree/main/ChaiAurCode",
+    github: "https://abhishekbansal2312.github.io/tictactoe/",
+    webapp: "https://abhishekbansal2312.github.io/tictactoe/",
   },
   {
     id: 7,
@@ -340,12 +368,133 @@ export const projects = [
     date: "Nov 2023 - Jan 2024",
     description:
       "I created a comprehensive eCommerce website, with all the necessary features to have a solid online shopping experience. The site includes a user-friendly page, allowing customers to create accounts and securely connect to their profiles. Basic functions such as product inspection, detailed product descriptions and simple testing procedures were carefully integrated. The website is designed to be intuitive and visually appealing, providing the best possible experience on all devices",
-    // image: "../ProjectImages/CU.png",
     image: "/images/CU.png",
-    tags: ["Javascipt", "MERN", "Firebase", "HTML/CSS"],
+    tags: ["Javascript", "MERN", "Firebase", "HTML/CSS"],
     category: "web app",
     github: "https://github.com/abhishekbansal2312/Ecommerce",
     webapp: "https://github.com/abhishekbansal2312/Ecommerce",
+  },
+  {
+    id: 8,
+    title: "Crouser",
+    date: "2023",
+    description:
+      "A carousel/image slider component with smooth transitions and customizable controls.",
+    image: "/images/crouser.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "component",
+    github: "https://abhishekbansal2312.github.io/Crouser/",
+    webapp: "https://abhishekbansal2312.github.io/Crouser/",
+  },
+  {
+    id: 9,
+    title: "Pagination",
+    date: "2023",
+    description:
+      "A pagination component that allows for efficient navigation through large datasets.",
+    image: "/images/pagination.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "component",
+    github: "https://abhishekbansal2312.github.io/pagination/",
+    webapp: "https://abhishekbansal2312.github.io/pagination/",
+  },
+  {
+    id: 10,
+    title: "Timer & Stopwatch",
+    date: "2023",
+    description:
+      "A dual-purpose application featuring both timer and stopwatch functionality with intuitive controls.",
+    image: "/images/timer.png",
+    tags: ["HTML", "CSS", "JavaScript", "Time Tracking"],
+    category: "utility",
+    github: "https://delicate-banoffee-3a8a78.netlify.app/",
+    webapp: "https://delicate-banoffee-3a8a78.netlify.app/",
+  },
+  {
+    id: 11,
+    title: "Alarm Clock",
+    date: "2023",
+    description:
+      "A digital alarm clock application with customizable alarm settings and notifications.",
+    image: "/images/alarm.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "utility",
+    github: "https://abhishekbansal2312.github.io/Alarm/",
+    webapp: "https://abhishekbansal2312.github.io/Alarm/",
+  },
+  {
+    id: 12,
+    title: "Text Manipulation App",
+    date: "2023",
+    description:
+      "A text utility application that allows users to manipulate and transform text with various operations.",
+    image: "/images/text-app.png",
+    tags: ["React", "CSS", "Text Processing"],
+    category: "utility",
+    github:
+      "https://word-git-master-abhishek-bansals-projects-af4fa9e1.vercel.app/",
+    webapp:
+      "https://word-git-master-abhishek-bansals-projects-af4fa9e1.vercel.app/",
+  },
+  {
+    id: 13,
+    title: "Expense Tracker",
+    date: "2023",
+    description:
+      "A financial management application that helps users track and categorize their expenses.",
+    image: "/images/expense.png",
+    tags: ["React", "State Management", "Financial"],
+    category: "utility",
+    github: "https://aesthetic-marshmallow-603ed0.netlify.app/",
+    webapp: "https://aesthetic-marshmallow-603ed0.netlify.app/",
+  },
+  {
+    id: 14,
+    title: "Redux Todo List",
+    date: "2023",
+    description:
+      "A task management application built with Redux for state management and React for the UI.",
+    image: "/images/redux-todo.png",
+    tags: ["React", "Redux", "Task Management"],
+    category: "utility",
+    github: "https://my-redux-todo-list.netlify.app/",
+    webapp: "https://my-redux-todo-list.netlify.app/",
+  },
+  {
+    id: 15,
+    title: "Whack-A-Mole",
+    date: "2023",
+    description:
+      "A fun, interactive game where players must quickly click on moles as they appear randomly on the screen.",
+    image: "/images/whack-a-mole.png",
+    tags: ["HTML", "CSS", "JavaScript", "Game"],
+    category: "game",
+    github: "https://whack-aa-mole.netlify.app/",
+    webapp: "https://whack-aa-mole.netlify.app/",
+  },
+  {
+    id: 16,
+    title: "React Tic-Tac-Toe",
+    date: "2023",
+    description:
+      "A modern implementation of the classic Tic-Tac-Toe game built with React for an enhanced user experience.",
+    image: "/images/react-tictactoe.png",
+    tags: ["React", "CSS", "Game"],
+    category: "game",
+    github: "https://tictaetoe-react.vercel.app/",
+    webapp: "https://tictaetoe-react.vercel.app/",
+  },
+  {
+    id: 17,
+    title: "Sudoku",
+    date: "2023",
+    description:
+      "An interactive Sudoku puzzle game with multiple difficulty levels and a solution checker.",
+    image: "/images/sudoku.png",
+    tags: ["HTML", "CSS", "JavaScript", "Game", "Puzzle"],
+    category: "game",
+    github: "https://zesty-crisp-c4888a.netlify.app/",
+    webapp: "https://zesty-crisp-c4888a.netlify.app/",
   },
 ];
 
